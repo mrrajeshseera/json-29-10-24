@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let my_data={
+            name :"s. rajesh",
+            age : 22,
+            Place :"Hyderabad",
+            state: "Telangana",
+            pincode: 500055
+        }
+        // console.log(my_data)
+
+
+        let string_data=JSON.stringify(my_data)
+        console.log(string_data)
+
+
+        let parse_data=JSON.parse(string_data)
+        console.log(parse_data)
+
+        
+        
+        localStorage.setItem("data",string_data)
+        sessionStorage.setItem("data",string_data)
+    </script>
+</body>
+</html>
